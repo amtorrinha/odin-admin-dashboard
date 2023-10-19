@@ -11,36 +11,45 @@
 
         <div class="sidebar">
             <div class="logo">
-              <p>Dashboard</p>    
+                <img src="./images/view-dashboard.svg">
+                <p>Dashboard</p>    
             </div>
             <div class="main-menu">
                 <ul>
-                  <li>Home</li>
-                  <li>Profile</li>
-                  <li>Messages</li>
-                  <li>History</li>
-                  <li>Tasks</li>
-                  <li>Communities</li>
+                  <li><img src="./images/home.svg"><p>Home</p></li>
+                  <li><img src="./images/card-account-details-outline.svg"><p>Profile</p></li>
+                  <li><img src="./images/message-reply.svg"><p>Messages</p></li>
+                  <li><img src="./images/clock-time-three.svg"><p>History</p></li>
+                  <li><img src="./images/note-multiple.svg"><p>Tasks</p></li>
+                  <li><img src="./images/account-group.svg"><p>Communities</p></li>
                 </ul>
             </div>
             <div class="settings-menu">
                 <ul>
-                  <li>Settings</li>
-                  <li>Support</li>
-                  <li>Privacy</li>
+                  <li><img src="./images/cog.svg"><p>Settings</p></li>
+                  <li><img src="./images/help-box.svg"><p>Support</p></li>
+                  <li><img src="./images/shield-check.svg"><p>Privacy</p></li>
                 </ul>
             </div>
         </div>
 
         <div class="header">
             <div class="search-bar">
-                <!-- TODO Add Glass Icon -->
+                <img src="./images/magnify.svg">
                 <input type="text" name="search">
             </div>
-            <!-- add icons inside next div -->
-            <div class="small-profile">Morgan Oakley</div>
-            <!-- add bigger icon inside next div -->
-            <div class="big-profile">Hi there, Morgan Oakley (@morgan)</div>
+            <div class="small-profile">
+                <img src="./images/bell-ring-outline.svg">
+                <div id="john-cena"></div>
+                <p>John Cena</p></div>
+            
+            <div class="big-profile">
+                <div id="bigger-john-cena"></div>
+                <div class="big-profile-text">
+                    <p class="greetings">Hi there,</p>
+                    <p class="user-info">John Cena (@JohnCena)</p>
+                </div>
+            </div>
             <div class="buttons">
                 <button>New</button>
                 <button>Upload</button>
@@ -49,13 +58,64 @@
         </div>
 
         <div class="content">
-            <div class="projects">
-                <div class="project-div">Project</div>
-                <div class="project-div">Project</div>
-                <div class="project-div">Project</div>
-                <div class="project-div">Project</div>
-                <div class="project-div">Project</div>
-                <div class="project-div">Project</div>
+            <div class="project-div">
+                <p class="content-header">Your Projects</p>
+                <div class="projects">
+                    <div class="project">
+                        <p class="project-title">Super Cool Project</p>
+                        <p class="project-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <div class="project-icons">
+                            <img src="./images/star-plus-outline.svg">
+                            <img src="./images/eye-plus-outline.svg">
+                            <img src="./images/share-variant-outline.svg">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <p class="project-title">Less Cool Project</p>
+                        <p class="project-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                        <div class="project-icons">
+                            <img src="./images/star-plus-outline.svg">
+                            <img src="./images/eye-plus-outline.svg">
+                            <img src="./images/share-variant-outline.svg">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <p class="project-title">Impossible App</p>
+                        <p class="project-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                        <div class="project-icons">
+                            <img src="./images/star-plus-outline.svg">
+                            <img src="./images/eye-plus-outline.svg">
+                            <img src="./images/share-variant-outline.svg">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <p class="project-title">Easy Peasy App</p>
+                        <p class="project-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <div class="project-icons">
+                            <img src="./images/star-plus-outline.svg">
+                            <img src="./images/eye-plus-outline.svg">
+                            <img src="./images/share-variant-outline.svg">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <p class="project-title">Ad Blocker</p>
+                        <p class="project-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <div class="project-icons">
+                            <img src="./images/star-plus-outline.svg">
+                            <img src="./images/eye-plus-outline.svg">
+                            <img src="./images/share-variant-outline.svg">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <p class="project-title">Money Maker</p>
+                        <p class="project-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                        <div class="project-icons">
+                            <img src="./images/star-plus-outline.svg">
+                            <img src="./images/eye-plus-outline.svg">
+                            <img src="./images/share-variant-outline.svg">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="announcements">
                 <div class="announcement-div">Announcement</div>
