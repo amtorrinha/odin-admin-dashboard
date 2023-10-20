@@ -172,7 +172,9 @@ ul {
     padding: 40px 20px;
     background-color: var(--grey);
     display: grid;
+    gap:30px;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .project-div {
@@ -185,18 +187,24 @@ ul {
 .projects {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, min-content));
 }
 
 .project {
-    padding: 10px;
+    padding: 20px;
     width: 300;
     height: 200;
     background-color: white;
     border-radius: 10px;
     display: grid;
-    gap: 5px;
+    grid-template-rows: 30px min-content 30px;
+    gap: 10px;
+    /* overflow: auto; */
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-left-color: green;
+    box-shadow: 1px 1px 3px black;
 }
 
 .content-header {
@@ -215,4 +223,88 @@ ul {
     padding-right: 30px;
     grid-template-columns: repeat(3, 30px);
     gap: 15px;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 20px;
+    align-self: last baseline;
+}
+
+.project-text {
+    font-size: 18px;
+    color: grey;
+}
+
+.announcements-div {
+    display: grid;
+    grid-template-rows: 25px;
+    gap: 15px; 
+}
+
+.announcements {
+    padding: 30px;
+    background-color: white;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.announcement {
+    padding-bottom: 20px;
+    align-items: center;
+    display: grid;
+    gap: 10px;
+    border: grey;
+    border-bottom-style: solid;
+    border-radius: 5px;
+    border-bottom-width: 1px;
+}
+
+.announcement-title {
+    font-weight: bold;
+}
+
+.announcement-text {
+    color: grey;
+}
+
+.trending-div {
+    display: grid;
+    grid-template-rows: 25px;
+    gap: 15px;
+}
+
+.trendings {
+    padding: 30px;
+    background-color: white;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    grid-template-rows: repeat(autofit, minmax(70px, 100px));
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+}
+
+.trending {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trending #john-cena {
+    grid-row: 1 / 3;
+}
+
+.trending-user {
+    font-weight: bold;
+    align-self: last baseline;
+}
+
+.trending-project {
+    color: grey;
 }
